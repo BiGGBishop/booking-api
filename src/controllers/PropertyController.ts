@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { AppDataSource } from '../config/database';
-import { Property } from '../entities/Property';
-import { Booking } from '../entities/Booking';
+import { Property } from '../models/Property';
+import { Booking } from '../models/Booking';
 
 // GET /properties
 export const getAllProperties = async (req: Request, res: Response) => {
